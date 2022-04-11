@@ -8,11 +8,28 @@ input.forEach((el) => {
 	el.addEventListener("change", (ev) => {
    if (ev.target.checked) {
 			ev.target.closest(".custom-checkbox").classList.add("active");
+    }
+
+    else if (ev.target.checked && ev.target.classList.contains("disabled")) {
+			ev.target.classList.remove("disabled");
+
 		} else {
 			ev.target.closest(".custom-checkbox").classList.remove("active");
 		}
   });		
 });
+
+
+
+// input.forEach((el) => {
+// 	el.addEventListener("change", (ev) => {
+//    if (ev.target.checked) {
+// 			ev.target.closest(".custom-checkbox").classList.add("active");
+// 		} else {
+// 			ev.target.closest(".custom-checkbox").classList.remove("active");
+// 		}
+//   });		
+// });
 
 
 // input.forEach((el) => {
@@ -70,11 +87,6 @@ input.forEach((el) => {
 // 	const checkboxLabel = checkboxEl.parentElement
 //     // logic comes here
 // }
-
-
-
-
-
 
 
 // customCheckbox.forEach((el) => {

@@ -132,4 +132,25 @@ body .card .custom-checkbox.active label:after {
           transform: scale(1.2);
   cursor: pointer;
 }
+
+body .card .custom-checkbox.disabled label {
+  opacity: 0.7;
+}
+
+body .card .custom-checkbox.disabled label:before {
+  opacity: 0;
+}
+
+body .card .custom-checkbox.disabled label:after {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: "\e901";
+  color: #686868;
+  opacity: 0.7;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
