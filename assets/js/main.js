@@ -10,10 +10,12 @@ input.forEach((el) => {
 			ev.target.closest(".custom-checkbox").classList.add("active");
     }
 
-    else if (ev.target.checked && ev.target.classList.contains("disabled")) {
-			ev.target.classList.remove("disabled");
+    // else if (ev.target.classList.contains("disabled") && ev.target.classList.contains("active")) {
+		// 	ev.target.closest(".custom-checkbox").classList.add("disabled");
 
-		} else {
+		// } 
+		
+		else {
 			ev.target.closest(".custom-checkbox").classList.remove("active");
 		}
   });		
