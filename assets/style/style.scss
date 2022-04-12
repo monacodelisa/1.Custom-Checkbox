@@ -117,6 +117,8 @@ body {
 			}
 
       &.disabled {
+        pointer-events: none;
+        
 				label {
           opacity: 0.7;
 
